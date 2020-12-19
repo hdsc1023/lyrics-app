@@ -1,0 +1,29 @@
+html {
+  background-color: #5A2E24;
+  background-image: -webkit-linear-gradient(65deg, #777574 40%, #1246BD 60%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+body{
+  color: #d8c7ca;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  line-height: 2;
+}
+#artist{
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#song{
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
