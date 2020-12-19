@@ -49,7 +49,9 @@ app.post("/", function(req, res) {
       var letters = JSON.parse(data)
       var lyricsong = letters.lyrics
       //console.log(letter);
-      res.send(lyricsong)
+      res.write(lyricsong);
+
+
 
   function wordCount( val ){
     var wom = val.match(/\S+/g);
@@ -61,9 +63,9 @@ app.post("/", function(req, res) {
     };
   }
 
-  console.log(wordCount(lyricsong).words)
-  console.log(wordCount(lyricsong).lines)
-
+  res.write("\n\n The lyrics has " + wordCount(lyricsong).words + " words." );
+  res.write("\nThe lyrics has" + wordCount(lyricsong).lines + " lines.");
+  res.send();
 
 
     })
